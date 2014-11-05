@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
     
     private let apiKey = "ae2fb2d6492878aaab8d12549caabbff"
+    
+    var locationManager: CLLocationManager?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-   
+        
+        self.locationManager = CLLocationManager()
+        self.locationManager?.requestWhenInUseAuthorization()
+        
+        var currentLocation = locationManager?.location
+        println("\(currentLocation?.coordinate.latitude)")
         
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
         let forecastURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
@@ -36,7 +44,7 @@ class ViewController: UIViewController {
                 println(currentWeather.currentTime!)
                 
             }
-                
+
         })
         downloadTask.resume()
     }
