@@ -9,14 +9,100 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Storming/Current.swift"
-            timestampString = "436906021.704172"
+            filePath = "Storming/ViewController.swift"
+            timestampString = "437015370.027931"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "dateStringFromUnixtime(_:)"
-            landmarkType = "5">
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Storming.ViewController.iconView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImageView&gt;"
+                  moduleName = "Storming"
+                  urlString = "file:///Users/Julia/swift/Storming/Storming/ViewController.swift"
+                  timestampString = "437015370.779335"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Storming.ViewController.iconView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImageView&gt;"
+                  moduleName = "Storming"
+                  urlString = "file:///Users/Julia/swift/Storming/Storming/ViewController.swift"
+                  timestampString = "437015370.779679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Storming.ViewController.iconView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImageView&gt;"
+                  moduleName = "Storming"
+                  urlString = "file:///Users/Julia/swift/Storming/Storming/ViewController.swift"
+                  timestampString = "437015370.779865"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Storming.ViewController.init (Storming.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Storming.ViewController"
+                  moduleName = "Storming"
+                  urlString = "file:///Users/Julia/swift/Storming/Storming/ViewController.swift"
+                  timestampString = "437015370.780047"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Storming.ViewController.init (Storming.ViewController.Type)() -&gt; Storming.ViewController"
+                  moduleName = "Storming"
+                  urlString = "file:///Users/Julia/swift/Storming/Storming/ViewController.swift"
+                  timestampString = "437015370.780224"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Storming.ViewController.init (Storming.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Storming.ViewController"
+                  moduleName = "Storming"
+                  urlString = "file:///Users/Julia/swift/Storming/Storming/ViewController.swift"
+                  timestampString = "437015370.7804"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "118">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

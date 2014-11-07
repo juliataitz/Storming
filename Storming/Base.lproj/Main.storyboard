@@ -68,6 +68,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloudy-night" translatesAutoresizingMaskIntoConstraints="NO" id="aQJ-So-9Vz">
                                 <rect key="frame" x="38" y="92" width="60" height="60"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyW-aX-wXO">
+                                <rect key="frame" x="140" y="28" width="43" height="43"/>
+                                <state key="normal" image="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PLd-9j-XCv"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="oKb-0r-R2V">
+                                <rect key="frame" x="150" y="40" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degree" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-kc-uuy">
+                                <rect key="frame" x="268" y="206" width="36" height="36"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -75,12 +90,17 @@
                             <constraint firstAttribute="centerY" secondItem="Qft-2j-rTO" secondAttribute="centerY" id="9GJ-Nb-G2a"/>
                             <constraint firstItem="Qft-2j-rTO" firstAttribute="top" secondItem="dVd-XR-hHh" secondAttribute="bottom" constant="-17" id="9I1-cP-StV"/>
                             <constraint firstItem="aQJ-So-9Vz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="Chf-OJ-LdZ"/>
+                            <constraint firstItem="Qft-2j-rTO" firstAttribute="top" secondItem="QbN-kc-uuy" secondAttribute="bottom" constant="-44" id="Ffc-Do-4eY"/>
                             <constraint firstItem="Pg2-wP-8pY" firstAttribute="top" secondItem="9Bg-HK-k8A" secondAttribute="bottom" constant="8" id="GkC-39-AHY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pg2-wP-8pY" secondAttribute="trailing" constant="36" id="J8A-SG-EPY"/>
+                            <constraint firstItem="QbN-kc-uuy" firstAttribute="leading" secondItem="Qft-2j-rTO" secondAttribute="trailing" constant="-18" id="NMh-UH-9y5"/>
+                            <constraint firstItem="oKb-0r-R2V" firstAttribute="centerY" secondItem="KyW-aX-wXO" secondAttribute="centerY" constant="0.5" id="P9h-Kf-PNl"/>
                             <constraint firstItem="Qka-uS-eiT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="QKO-nf-08Z"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="uFB-pT-M2L" secondAttribute="bottom" constant="90" id="RMT-2p-rQo"/>
+                            <constraint firstAttribute="centerX" secondItem="KyW-aX-wXO" secondAttribute="centerX" constant="-1.5" id="TNr-fO-0Zr"/>
                             <constraint firstItem="Qka-uS-eiT" firstAttribute="top" secondItem="Y6O-ml-udd" secondAttribute="bottom" constant="8" id="Wjw-Lh-eYP"/>
                             <constraint firstAttribute="centerX" secondItem="dVd-XR-hHh" secondAttribute="centerX" id="YTV-tr-6l1"/>
+                            <constraint firstItem="oKb-0r-R2V" firstAttribute="centerX" secondItem="KyW-aX-wXO" secondAttribute="centerX" constant="-1.5" id="aXN-2U-DzJ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Y6O-ml-udd" secondAttribute="bottom" constant="177" id="arm-K3-fq8"/>
                             <constraint firstAttribute="centerX" secondItem="aQJ-So-9Vz" secondAttribute="centerX" constant="92" id="cZx-h7-93X"/>
                             <constraint firstItem="Pg2-wP-8pY" firstAttribute="top" secondItem="9Bg-HK-k8A" secondAttribute="bottom" constant="10" id="gFw-di-s1J"/>
@@ -88,6 +108,7 @@
                             <constraint firstItem="1U8-lM-q0S" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="89" id="iOM-cH-cOC"/>
                             <constraint firstItem="Y6O-ml-udd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="jwH-ci-PMF"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9Bg-HK-k8A" secondAttribute="bottom" constant="177" id="kjZ-l8-kxw"/>
+                            <constraint firstAttribute="centerY" secondItem="KyW-aX-wXO" secondAttribute="centerY" constant="234.5" id="xpw-Ny-sAA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -95,6 +116,8 @@
                         <outlet property="humidityLabel" destination="Qka-uS-eiT" id="STZ-47-XOc"/>
                         <outlet property="iconView" destination="aQJ-So-9Vz" id="ORA-rq-om6"/>
                         <outlet property="percipitationLabel" destination="Pg2-wP-8pY" id="Rma-IP-FHX"/>
+                        <outlet property="refreshActivityIndicator" destination="oKb-0r-R2V" id="7EJ-gf-J1F"/>
+                        <outlet property="refreshButton" destination="KyW-aX-wXO" id="iyN-bf-PKW"/>
                         <outlet property="summaryLabel" destination="uFB-pT-M2L" id="pHL-nT-OKS"/>
                         <outlet property="temperatureLabel" destination="Qft-2j-rTO" id="C0R-mR-GTV"/>
                     </connections>
@@ -106,6 +129,8 @@
     </scenes>
     <resources>
         <image name="cloudy-night" width="46" height="43"/>
+        <image name="degree" width="36" height="36"/>
+        <image name="refresh" width="43" height="43"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
