@@ -19,11 +19,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.locationManager = CLLocationManager()
-        self.locationManager?.requestWhenInUseAuthorization()
+//        self.locationManager = CLLocationManager()
+//        self.locationManager?.requestWhenInUseAuthorization()
+//        
+//        var currentLocation = locationManager?.location
         
-        var currentLocation = locationManager?.location
-        println("\(currentLocation?.coordinate.latitude)")
         
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
         let forecastURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
