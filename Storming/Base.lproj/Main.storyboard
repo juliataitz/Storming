@@ -90,6 +90,14 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9Bg-HK-k8A" secondAttribute="bottom" constant="177" id="kjZ-l8-kxw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="dVd-XR-hHh" id="13x-Is-ayg"/>
+                        <outlet property="humidityLabel" destination="Qka-uS-eiT" id="STZ-47-XOc"/>
+                        <outlet property="iconView" destination="aQJ-So-9Vz" id="ORA-rq-om6"/>
+                        <outlet property="percipitationLabel" destination="Pg2-wP-8pY" id="Rma-IP-FHX"/>
+                        <outlet property="summaryLabel" destination="uFB-pT-M2L" id="pHL-nT-OKS"/>
+                        <outlet property="temperatureLabel" destination="Qft-2j-rTO" id="C0R-mR-GTV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
