@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     
     private let apiKey = "ae2fb2d6492878aaab8d12549caabbff"
     
@@ -24,25 +24,38 @@ class ViewController: UIViewController {
     
     
     var locationManager: CLLocationManager?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.locationManager = CLLocationManager()
-//        self.locationManager?.requestWhenInUseAuthorization()
-//        
-//        var currentLocation = locationManager?.location
-        
+       
         
         refreshActivityIndicator.hidden = true
         getCurrentWeatherData()
 
     }
+    func getLocation(){
+        locationManager = CLLocationManager()
+        locationManager?.requestWhenInUseAuthorization()
+        
+        var currentLocation = locationManager?.location
+        var latitude = currentLocation?.coordinate.latitude
+        var longitude = currentLocation?.coordinate.longitude
+        var latitudeString = "\(latitude)"
+        var longitudeString = "\(longitude)"
+        println("\(latitude)")
+        println("\(longitude)")
+        
+//        return latitude
+//        return longitude
+        
+    }
   
     func getCurrentWeatherData() -> Void{
+        getLocation();
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
-        let forecastURL = NSURL(string: "40.7142,-74.0060", relativeToURL: baseURL)
-        
+//        let forecastURL = NSURL(string: "\(latitude),\(longtitude)", relativeToURL: baseURL)
+        let forecastURL = NSURL(string: "37.785834, -122.406417", relativeToURL: baseURL)
         let weatherData = NSData(contentsOfURL: forecastURL!, options: nil, error: nil)
         
         let sharedSession = NSURLSession.sharedSession()
